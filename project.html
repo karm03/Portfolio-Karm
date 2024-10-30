@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karm Bhatt's Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 2, 45);
+            color: rgb(243, 243, 102);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 900;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(46, 46, 72);
+        }
+
+        nav .logo {
+            font-size: 1.7rem;
+            color: lavender;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 30px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 30px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: lavender;
+            position: relative;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background-color: yellow;
+            transition: width 0.4s ease-in-out;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: lavender;
+        }
+
+        main {
+            margin: 50px 70px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: lavender;
+            margin-bottom: 30px;
+        }
+
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-item {
+            background-color: rgb(46, 46, 72);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            width: 80%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-item h3 {
+            font-size: 1.8rem;
+            color: lavender;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 1rem;
+            color: rgb(243, 243, 102);
+            margin-bottom: 15px;
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            color: lavender;
+            border: 2px solid lavender;
+            transition: background-color 0.3s;
+        }
+
+        .project-links a:hover {
+            background-color: yellow;
+            color: rgb(46, 46, 72);
+        }
+
+        footer {
+            background-color: rgb(46, 46, 72);
+            justify-content: space-around;
+            text-align: center;
+            font-size: 1.58rem;
+            padding: 25px 0;
+        }
+
+        footer .copy {
+            font-size: 1rem;
+            color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                Karm's Portfolio
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="projects-section">
+            <h2>My Projects</h2>
+            <p>Here are some of the projects I've worked on. Click on the buttons to view the source code or see a live demo!</p>
+            
+            <div class="project-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <h3>Project 1: Help Desk Assistant</h3>
+                    <p>An AI-driven helpdesk chatbot designed for organizations, providing employees with guided support and answers in both voice and text formats for seamless workflow assistance.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/karm03" target="_blank">View GitHub</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item">
+                    <h3>Project 2: Kicad Automation</h3>
+                    <p> The KiCad Process Automation project automates parsing and updating KiCad schematic files using Python and KIutils. Then we can extract the data from the schematic files and we can perform required changes in it.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/karm03" target="_blank">View GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <h3>Project 3: Python Games</h3>
+                    <p>I have made games using python language 
+                        <li>Guess the number</li>
+                        <li>Cipher text generator</li>
+                        <li>Maze generator</li>
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/karm03" target="_blank">View GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="foot">
+            Thanks for visiting!
+            <div class="copy">
+                Last updated on 11 April 2024 by Karm Bhatt
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

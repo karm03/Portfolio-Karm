@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        /* Reset and global styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Flexbox layout for body */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgb(2, 2, 45);
+            color: rgb(243, 243, 102);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 900;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(46, 46, 72);
+        }
+
+        nav .logo {
+            font-size: 1.7rem;
+            color: lavender;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 30px;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 30px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: lavender;
+            position: relative;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background-color: yellow;
+            transition: width 0.4s ease-in-out;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: lavender;
+        }
+
+        /* About Section Styling */
+        main {
+            flex: 1; /* Takes remaining space to push footer to bottom */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            color: lavender;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: rgb(46, 46, 72);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer .copy {
+            font-size: 1rem;
+            color: lavender;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">My Logo</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <main id="about">
+        <h1>About Me</h1>
+        <p>Hello! I am a fourth-year Computer Science student at Gyanmanjari Institute of Technology, with a passion for full-stack web development and data analysis.</p>
+        <p>I have experience in Python and web development languages, and I'm currently advancing my skills in Python Programming projects. My goal is to become a skilled data analyst so that I can make new innovations using that data.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copy">&copy; 2024 karmbhatt. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

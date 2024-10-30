@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Karm Bhatt's Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2, 2, 45);
+            color: rgb(243, 243, 102);
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 900;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(46, 46, 72);
+        }
+
+        nav .logo {
+            font-size: 1.7rem;
+            color: lavender;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 30px;
+        }
+
+        
+        nav ul li {
+            list-style: none;
+            margin: 0px 30px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: lavender;
+            position: relative;
+        }
+
+        nav ul li::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 2px;
+            width: 0;
+            background-color: yellow;
+            transition: width 0.4s ease-in-out;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: lavender;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .skills-header {
+            font-size: 2rem;
+            color: yellow;
+            margin-bottom: 20px;
+        }
+
+        .skill-desc {
+            font-size: 1.2rem;
+            color: lavender;
+            max-width: 80%;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .skill-list ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-list ul li {
+            background-color: rgb(46, 46, 72);
+            color: yellow;
+            border: 1.7px solid yellow;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .skill-list ul li:hover {
+            background-color: yellow;
+            color: rgb(46, 46, 72);
+            cursor: pointer;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer .foot {
+            background-color: rgb(46, 46, 72);
+            justify-content: space-around;
+            text-align: center;
+            font-size: 1.58rem;
+            padding: 15px 0;
+        }
+
+        footer .foot .copy {
+            font-size: 1rem;
+            color: lavender;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Karm's Portfolio</div>
+            <div class="pages">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="skill.html">Skills</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="skills-container">
+            <h2 class="skills-header">My Skills</h2>
+            <p class="skill-desc">I am proficient in a variety of programming languages and frameworks, with a strong
+                foundation in web development, data structures, and basic Python principles. My technical and interpersonal
+                skills allow me to communicate effectively and work well within a team.</p>
+            <div class="skill-list">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python (Beginner)</li>
+                    <li>C Language</li>
+                    <li>Data Structures</li>
+                    <li>Team Work</li>
+                    <li>Communication Skills</li>
+                    <li>Quick Learner</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p>Hope you find it well</p>
+            <div class="copy">Last updated on 11 April 2024 by Karm Bhatt (PrivacyPolicies.com Legal writer)</div>
+        </div>
+    </footer>
+</body>
+
+</html>
